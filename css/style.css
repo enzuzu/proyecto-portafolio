@@ -1,0 +1,82 @@
+/****************************************
+*    Variables
+*****************************************/
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #0366ee;
+  --link: #0000ee;
+  --hover: #551a8b;
+  --secondary: #c4c4c4;
+  --font-family: "Arya", sans-serif;
+}
+
+/****************************************
+*    Base - Elements
+*****************************************/
+html {
+  height: 100%;
+}
+
+body {
+  color: var(--black);
+  background: var(--white);
+  font-size: 100%;
+  font-size: calc(16px + (20 - 16) * ((100vw - 720px) / (1400 - 720)));
+  font-family: var(--font-family);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/****************************************
+*    Components - Common
+*****************************************/
+/* Navegacion */
+.navegacion ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em;
+}
+
+.navegacion ul li:nth-child(2) {
+  padding-left: 2em;
+}
+
+/* Proyectos */
+.lista-proyectos {
+  display: flex;
+}
+
+.lista-proyectos ul {
+  font-size: 90px;
+  padding-left: 32px;
+}
+
+/****************************************
+*    Helpers
+*****************************************/
+.centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ayuda visual temporal */
+.outline {
+  border: 2px dotted blue;
+}
