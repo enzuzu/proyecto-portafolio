@@ -1,3 +1,18 @@
+/* Tipografía */
+@font-face {
+  font-family: "arya";
+  src: url("../assets/fonts/arya.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "arya-bold";
+  src: url("../assets/fonts/aryabold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
 /****************************************
 *    Variables
 *****************************************/
@@ -8,7 +23,8 @@
   --link: #0000ee;
   --hover: #551a8b;
   --secondary: #c4c4c4;
-  --font-family: "Arya", sans-serif;
+  --font-family: "arya", sans-serif;
+  --font-family-bold: "arya-bold", sans-serif;
 }
 
 /****************************************
@@ -65,6 +81,19 @@ ul {
 .lista-proyectos ul {
   font-size: 90px;
   padding-left: 32px;
+}
+
+.imagen-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.imagen-proyecto {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
 }
 
 /****************************************
