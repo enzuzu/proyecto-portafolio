@@ -59,6 +59,31 @@ ul {
   padding-left: 0;
 }
 
+/*
+a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: var(--black);
+  transition: all 0.4s ease;
+}
+a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  right: 0px;
+  bottom: -3px;
+  left: 0px;
+  background-color: var(--link);
+}
+a:hover {
+  color: var(--gradient);
+}
+a:hover::before {
+  background: linear-gradient(to right, var(--link) 40%, var(--gradient) 75%);
+}
+*/
+
 /****************************************
 *    Components - Common
 *****************************************/
@@ -66,7 +91,9 @@ ul {
 .navegacion ul {
   display: flex;
   justify-content: flex-end;
-  padding: 2em;
+  padding: 1em 0;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .navegacion ul li:nth-child(2) {
@@ -76,12 +103,33 @@ ul {
 /* Proyectos */
 .lista-proyectos {
   display: flex;
+  width: min(1400px, 95vw);
+  margin: 0 auto;
 }
 
 .lista-proyectos ul {
-  font-size: 90px;
   padding-left: 32px;
+  width: 100%;
+  font-size: 54px;
+  line-height: 1.5;
+  /* font-family: var(--font-family-bold); */
 }
+
+@media screen and (max-width: 40em) {
+  /* Móvil 640px */
+  .lista-proyectos ul {
+    font-size: 32px;
+  }
+}
+
+/*
+@media screen and (min-width: 60em) {
+    Móvil 960px 
+  .lista-proyectos ul {
+    font-size: 64px;
+  }
+}
+*/
 
 .imagen-container {
   display: flex;
