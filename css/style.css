@@ -59,6 +59,10 @@ ul {
   padding-left: 0;
 }
 
+[hidden] {
+  display: none;
+}
+
 /*
 a {
   position: relative;
@@ -122,6 +126,13 @@ a:hover::before {
   }
 }
 
+.display-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 /*
 @media screen and (min-width: 60em) {
     Móvil 960px 
@@ -130,7 +141,7 @@ a:hover::before {
   }
 }
 */
-
+/*
 .imagen-container {
   display: flex;
   align-items: center;
@@ -141,6 +152,20 @@ a:hover::before {
 .imagen-proyecto {
   width: 400px;
   height: 400px;
+  margin: 0 auto;
+}
+*/
+
+/* Proyecto */
+.proyecto {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1em;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.imagenes-proyecto img {
   margin: 0 auto;
 }
 
