@@ -156,17 +156,37 @@ a:hover::before {
 }
 */
 
-/* Proyecto */
-.proyecto {
+/* Proyecto & About layout */
+.proyecto,
+.about {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 150px 1fr;
   gap: 1em;
   max-width: 90vw;
   margin: 0 auto;
 }
 
+.info-proyecto h2 {
+  font-size: 1.5em;
+}
+.info-proyecto p {
+  /* line-height: 1.9; */
+}
+
 .imagenes-proyecto img {
   margin: 0 auto;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 60em) {
+  .proyecto,
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
 }
 
 /****************************************
