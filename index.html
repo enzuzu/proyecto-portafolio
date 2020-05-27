@@ -11,22 +11,40 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <nav class="navegacion">
-      <ul>
-        <li>
-          <a id="year" href="/#year">YEAR</a>
-          <!-- Esto es un comentario que es ignorado por el html -->
-          <!--
+  <body class="container home">
+    <header class="header">
+      <h1>
+        <a href="/">
+          enzo garcía
+        </a>
+      </h1>
+
+      <nav class="nav" role="navigation">
+        <ul class="menu">
+          <li>
+            <a class="link" href="#">
+              YEAR
+            </a>
+          </li>
           <ul class="submenu" hidden>
             <li><a href="/">2020</a></li>
             <li><a href="/">2019</a></li>
             <li><a href="/">2018</a></li>
           </ul>
-        --></li>
-        <li><a id="about" href="/about">ABOUT</a></li>
-      </ul>
-    </nav>
+          <li>
+            <a href="/about.html">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="work.html">
+              Work
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="lista-proyectos">
       <ul>
         <li><a href="">LESGAICINEMAD</a></li>
@@ -37,10 +55,8 @@
         <li><a id="proyecto-seis" href="">MANTIS</a></li>
         <li><a id="proyecto-siete" href="">IDENTITAS</a></li>
       </ul>
-      <div class="imagenes-proyectos">
-        <img src="./assets/images/manualtypo.jpg" alt="" />
-      </div>
+      <div class="imagenes-proyectos"></div>
     </div>
-    <!-- script js -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

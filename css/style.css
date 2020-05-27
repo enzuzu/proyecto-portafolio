@@ -63,6 +63,11 @@ ul {
   display: none;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 /*
 a {
   position: relative;
@@ -91,45 +96,79 @@ a:hover::before {
 /****************************************
 *    Components - Common
 *****************************************/
-/* Navegacion */
-.navegacion ul {
+.container {
   display: flex;
-  justify-content: flex-end;
-  padding: 1em 0;
-  max-width: 90vw;
+  flex-direction: column;
+  width: 90vw;
   margin: 0 auto;
 }
 
-.navegacion ul li:nth-child(2) {
-  padding-left: 2em;
+.home {
+  background: url(../assets/images/bg-home.jpg);
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+/*
+.proyectos {
+  background: url(../assets/images/bg-home.jpg);
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 22px;
+}
+
+/* Navegacion */
+.menu {
+  position: relative;
+  display: flex;
+  padding: 1em;
+}
+
+.menu li {
+  padding-left: 1em;
+}
+
+.submenu {
+  position: absolute;
+  transform: translate(0, 25px);
 }
 
 /* Proyectos */
 .lista-proyectos {
   display: flex;
-  width: min(1400px, 95vw);
+  flex-direction: column-reverse;
+  width: 100%;
   margin: 0 auto;
 }
 
 .lista-proyectos ul {
-  padding-left: 32px;
   width: 100%;
-  font-size: 54px;
+  font-size: 32px;
   line-height: 1.5;
-  /* font-family: var(--font-family-bold); */
 }
 
-@media screen and (max-width: 40em) {
-  /* Móvil 640px */
+@media screen and (min-width: 40em) {
+  .lista-proyectos {
+    width: min(1400px, 95vw);
+  }
+
   .lista-proyectos ul {
-    font-size: 32px;
+    padding-left: 32px;
+    font-size: 54px;
   }
 }
 
 .display-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 100%;
 }
 
@@ -160,7 +199,7 @@ a:hover::before {
 .proyecto,
 .about {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 1fr;
   gap: 1em;
   max-width: 90vw;
   margin: 0 auto;
@@ -186,6 +225,18 @@ a:hover::before {
     gap: 1em;
     max-width: 90vw;
     margin: 0 auto;
+  }
+
+  .info-proyecto h2 {
+    font-size: 1.5em;
+  }
+  .info-proyecto p {
+    /* line-height: 1.9; */
+  }
+
+  .imagenes-proyecto img {
+    margin: 0 auto;
+    margin-top: 1em;
   }
 }
 

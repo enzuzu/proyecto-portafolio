@@ -1,12 +1,11 @@
-/*
-const proyectoUno = document.getElementById("proyecto-uno");
-const imagenProyectoUno = document.querySelector(".imagen-proyecto");
+const nav = document.querySelector("nav");
+const yearLink = nav.querySelector(".link");
+const submenu = nav.querySelector(".submenu");
 
-proyectoUno.addEventListener("click", displayProyectoImage);
+yearLink.addEventListener("click", showMenu);
 
-function displayProyectoImage() {
-  imagenProyectoUno.removeAttribute("hidden");
-  console.log(proyectoUno);
+function showMenu(e) {
+  e.preventDefault();
+  submenu.toggleAttribute("hidden");
+  console.log("funciona!");
 }
-*/
-// TODO Ejemplo Mich: On Link Hover effect display proyecto image
