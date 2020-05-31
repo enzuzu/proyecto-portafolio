@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  color: var(--black);
+  color: var(--blue);
   background: var(--white);
   font-size: 100%;
   font-size: calc(16px + (20 - 16) * ((100vw - 720px) / (1400 - 720)));
@@ -43,7 +43,7 @@ body {
 }
 
 a {
-  color: black;
+  color: rgb(10, 66, 31);
   text-decoration: none;
   cursor: pointer;
 }
@@ -53,7 +53,6 @@ a:active {
   opacity: 0.8;
   text-decoration: none;
 }
-
 ul {
   list-style: none;
   padding-left: 0;
@@ -122,8 +121,8 @@ a:hover::before {
   justify-content: space-between;
 }
 
-.header h1 {
-  font-size: 22px;
+.logo img {
+  padding: 2em;
 }
 
 /* Navegacion */
