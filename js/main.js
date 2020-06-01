@@ -1,4 +1,3 @@
-/*
 const nav = document.querySelector("nav");
 const yearLink = nav.querySelector(".link");
 const submenu = nav.querySelector(".submenu");
@@ -10,4 +9,3 @@ function showMenu(e) {
   submenu.toggleAttribute("hidden");
   console.log("funciona!");
 }
-*/
